@@ -15,11 +15,20 @@ def turnLEDon(GPno):
     print("LED off")
     GPIO.output(GPno,GPIO.LOW)
 
+def yellowLED():
+    turnLEDon(16) #yellow led
 
-turnLEDon(16) #yellow led
+def greenLED():
+    turnLEDon(18) #green led
 
-turnLEDon(18) #green led
+def redLED():
+    turnLEDon(15) #red led
 
-turnLEDon(15) #red led
-
-turnLEDon(22) #white led
+def whiteLED():
+    turnLEDon(22) #white led
+    
+while(1):
+    yellowLED()
+    greenLED()
+    redLED()
+    whiteLED()
