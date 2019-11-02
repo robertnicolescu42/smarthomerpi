@@ -2,7 +2,9 @@ import RPi.GPIO as GPIO
 import time
 
 #GPIO 16 - YELLOW LED
-#
+#GPIO 18 - GREEN LED
+#GPIO 15 - RED LED
+#GPIO 22 - WHITE LED
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
@@ -26,9 +28,3 @@ def redLED():
 
 def whiteLED():
     turnLEDon(22) #white led
-    
-while(1):
-    yellowLED()
-    greenLED()
-    redLED()
-    whiteLED()
