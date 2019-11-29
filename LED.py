@@ -28,3 +28,8 @@ def redLED():
 
 def whiteLED():
     turnLEDon(22) #white led
+    
+yellowLED()
+greenLED()
+redLED()
+whiteLED()

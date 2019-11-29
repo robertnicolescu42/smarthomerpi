@@ -92,7 +92,7 @@ def turnLEDon(GPno):
     GPIO.setup(GPno,GPIO.OUT)
     #print("LED on")
     GPIO.output(GPno,GPIO.HIGH)
-    time.sleep(1)
+    time.sleep(0.5)
     #print("LED off")
     GPIO.output(GPno,GPIO.LOW)
 
@@ -111,28 +111,39 @@ def whiteLED():
 def SensCheck():
     list = bme280()
     lightLV = bh1750()
+    
     if (lightLV < '1.00'):
         whiteLED()
-        ##pune in baza de date / returneaza
     if (list[0] > 20):
         redLED()
-        ##pune in baza de date / returneaza
     if (list[1] > 98):
         greenLED()
-        ##pune in baza de date / returneaza
-
     if (list[2] > 700):
         yellowLED()
-        ##pune in baza de date / returneaza
+    
     lightLevel = lightLV + " lx"
     tempLevel = "Temperature: %0.1f C" % list[0]
     humidLevel = "Humidity: %0.1f %%" % list[1]
     presLevel = "Pressure: %0.1f hPa" % list[2]
 
-    print(lightLevel)
-    print(humidLevel)
-    print(presLevel)
-    print (tempLevel)
+    #print(lightLevel)
+    #print(humidLevel)
+    #print(presLevel)
+    #print (tempLevel)
+    
+    strlist = []
+    strlist.append(lightLV)
+    strlist.append("%0.1f" % list[0])
+    strlist.append("%0.1f" % list[1])
+    strlist.append("%0.1f" % list[2])
+    return strlist
         
-SensCheck()
-sensors()
+#SensCheck()
+#sensors()
+
+def solution():
+    list = SensCheck()
+    my_string = ','.join(map(str, list))
+    print(my_string)
+    
+solution()
