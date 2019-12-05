@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    background-color:#ffffff;
+    background-size: 1440px 800px;
+    background-repeat:no-repeat;
+    display: compact;
+    font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.login_btn{
+    color: white;
+    background-color: #000000;
+    width: 100px;
+}
+
+.login_btn:hover{
+    color: black;
+    background-color: #ffffff;
+}
+.card{
+    height: 340px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0,0,0,0.5) !important;
+}
+
+
+.card-header h3{
+    color: white;
+}
+
+
+.input-group-prepend span{
+    width: 50px;
+    background-color: #000000;
+    color: white;
+    border:0 !important;
+}
+
+input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+    color: white;
+}
+
+.remember input
+{
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.links{
+    color: white;
+}
+
+.links a{
+    margin-left: 4px;
+}
+
+.color-fa-home span i {
+    color: #ffffff ;
+
+}

@@ -159,4 +159,4 @@ def fisier():
 #print("merge")
 while (True):
     fisier()
-    time.sleep(3)
+    time.sleep(10)
