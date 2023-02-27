@@ -3,15 +3,6 @@ Databases project
 Databases Coursework
 "Angel Kanchev" University of Ruse
 
-Erasmus+ Romanian students (Pitești)
-Nicolescu Mihai-Robert
-Marin Marian Puiu
-Ene Remus Ionut
-Nedelea Eugen Cristian
-Oprea Alexandra Catalina
-Year: 2
-Lecturer: Irena Valova
-
 Github repository of the project
 
 
